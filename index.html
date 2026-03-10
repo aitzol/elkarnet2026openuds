@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+		<style>
+			.reveal
+			.reveal h1,
+			.reveal h2,
+			.reveal h3,
+			.reveal h4,
+			.reveal h5,
+			.reveal h6,
+			.reveal p,
+			.reveal li {
+				font-family: "Roboto", sans-serif;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="irudiak/logoak/5.png">
+					<h1>openUDS ingurunea</h1>
+					<p>Aitzol Naberan Burgaña</p>
+					<p>iranaberan@lhusurbil.eus | Zubieta LHII</p>
+				</section>
+				<section data-background-image="irudiak/logoak/5.png">
+					<h1>Nondik gatoz?</h1>
+					<section>
+					<ul>
+						<li >2021-2022 ikasturtea, uztaileko esleipenak
+
+						</li>
+							<img class="fragment" src="irudiak/plaza-2021-2022.png" />
+							<img class="fragment" src="irudiak/plaza-2021-2022-det.png" />
+					</ul>
+					</section>
+					<section>
+					<ul>
+						<li>Idazmahai birtuala? UDS?</li>
+					</ul>
+					</section>
+					
+				</section>
+				<section data-background-image="irudiak/logoak/5.png">
+						<h1>DISCLAIMER</h1>
+						<p>IsardVDI</p>
+					</section>
+				<section data-background-image="irudiak/logoak/5.png">
+					
+					<section>
+						<h1>Idazmahai birtualak</h1>
+						<p>Zertaz ari gara hitz egiten?</p>
+					</section>
+					<section>
+						<a title="YupiterX, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Virtual_Desktop_Infrastructure,VDI.png"><img width="512" alt="Virtual Desktop Infrastructure,VDI" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Virtual_Desktop_Infrastructure%2CVDI.png?_=20151201143348"></a>
+					</section>
+
+				</section>
+				<section data-background-image="irudiak/logoak/5.png">
+					<section>
+						<h2>Eta OpenUDS?</h2>
+						<ul>
+							<li>Makina birtualak kudeatzeko ingurunea</li>
+							<li>Virtualizazio zerbitzari desberdinak erabiltzeko aukera</li>
+							<li>Konexio aukera desberdinak</li>
+						</ul>
+					</section>
+					<section>
+						<img  src="irudiak/vdi_schema.png" />
+					</section>
+				</section>
+				<section data-background-image="irudiak/logoak/5.png">
+					<section data-background-image="irudiak/logoak/5.png">
+						<h1>Inplantazioa</h1>
+						<p>Hasiera batean eskuzko instalazioa</p>
+						<p>Froga/testing astuna -> docker compose ingurunea</p>
+						<p>Zubietan 2022 ikasturte bukaeran frogetan desplegatuta</p>
+					</section>
+					<section>
+					<h1>Garapena</h1>
+					<p class="fragment">Oinarri sistema VirtualCable enpresa</p>
+					<span class="fragment">
+						<p>Docker ingurunea</p>
+						<p><a href="https://github.com/Zubieta-Lanbide-Eskola/uds-docker">https://github.com/Zubieta-Lanbide-Eskola/uds-docker</a></p>
+					</span>
+					</section>
+					<section>
+						<h1>Mantenua</h1>
+						<ul>
+							<li>openUDS-ko azken bertsiora (4.0) eguneratua</li>
+							<li>Oinarri garapenak irekian egiteko konpromisoa</li>
+							<li>Eguneraketa (momentuz) Zubieta + Binovo</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+		</script>
+	</body>
+</html>
